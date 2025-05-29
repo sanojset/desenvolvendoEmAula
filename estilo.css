@@ -1,0 +1,132 @@
+/*/*Seleciona cada um dos elementos do html*/
+*{
+	/*Zerar as propriedades de espaçamento de todos os elementos, assim tendo maior controle sobre o conteúdo */
+
+margin: 0;
+padding: 0;
+/*Considera a borda na definição de altura e largura dos elementos*/
+box-sizing: border-box;
+}
+
+
+
+html{
+	/*Define a família da fonte de texto*/
+	font-family: Arial, Verdana, sans-serif;
+	/*	Define tamanho padrão da fonte*/
+	font-size: 16px;
+
+}
+
+/*Seleciona o elemento com a classe "container"*/
+.container{
+	/*Define uma cor de fundo*/
+	background-color: #c0c0c0;
+	/*Define a largura miníma*/
+	min-width: 600px;
+	max-width: 900px;
+	/*Essa propriedade vai centralizar o elemento*/
+	margin: 0 auto;
+}
+
+
+	/*Cabeçalho*/
+
+header{
+	background-color: #573258;
+
+	height: 110px;
+	/*Define o alinhamento do texto*/
+	text-align: center;
+}
+
+header h1{
+	color: #FFF;
+	/*Defineo espaçamento interno, dentro das bordas*/
+	padding: 10px 0;
+}
+
+/*
+		Menu de navegação*/
+
+header ul{
+	height: 50px;
+	background-color: #dcb6d3;
+	/*Remove os marcadores*/
+	list-style-type: none;
+	/*Alinhamento vertical*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	/*Permite que os elementos fiquem lado a lado se houver espaço suficiente*/
+	display: inline-block;
+	margin-right: 15px;
+}
+
+nav ul li a:visited,
+nav ul li a:link{
+	/*remove o sublinhado*/
+	text-decoration:none;
+	color: #573258;
+	/*Define espessura da fonte*/
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 1px;
+	transition: border-bottom 0.2s;
+
+
+}
+
+nav ul li a:hover{
+	border-bottom: 2px solid #573258;
+}
+
+
+nav ul li a:active{
+	border-bottom: 2px solid black;
+}
+
+
+/*
+		DESTAQUE*/
+
+.destaque{
+	background-color: #d7cbd7;
+	height: 250px;
+
+}
+
+.destaque figure{
+	height: 200px;
+	width: 35%;
+	background-color: #573258;
+	margin: 25px 20px;
+	float: left;
+}
+
+.destaque p{
+	float: left;
+	width: 58%;
+	margin-top: 25px;
+	text-align: justify;
+	line-height: 24px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+
+
+/*	Principal*/
+
+main{
+	height: 500px;
+	background-color: orange;
+}
+
+.noticias{
+	background-color: lightgray;
+	height: 100%;
+	width: 68%;
+}
